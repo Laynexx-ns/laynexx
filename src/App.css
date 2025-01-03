@@ -36,6 +36,7 @@
 
 .mainDiv {
   position: relative;
+  background-attachment: fixed ;
   background-image: url("/src/assets/Nature 4.svg");
   background-size: cover;
   background-position: center;
