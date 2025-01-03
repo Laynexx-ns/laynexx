@@ -1,0 +1,15 @@
+.decorationDiv{
+
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
+   font-size: var(--main-page-font-size);
+    background-color: rgba(0, 0, 0, 0.22);
+    border-color: rgba(0, 0, 0, 0.6);
+}
+
+.decorationDiv span {
+    opacity: 1;
+}

@@ -1,17 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-#root {
-  font-family: 'Press Start 2P', cursive;
-  --active-color: #FFFF;
-  margin: 0 auto;
-  text-align: center;
-
-}
 
 :root {
   --chapter-radial: #363654;
@@ -23,50 +15,81 @@
   --surface-1: #101012;
   --surface-2: #27272a;
   --surface-3: #52525b;
+  --main-page-font-size: 72px;
   --ease-out: cubic-bezier(0.6, 1, 0.89, 2);
   --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
-  height: auto;
 }
 
-
-.chapterDiv {
-
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-
 
 .mainDiv {
   position: relative;
-  background-attachment: fixed ;
   background-image: url("/src/assets/Nature 4.svg");
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
-
+  min-height: 100vh;
 }
 
+.defaultDiv {
+  margin: 32px;
+  width: calc(100% - 64px);
+  min-height: calc(100vh - 64px);
+  background-color: rgba(175, 88, 213, 0.2);
+  border: 5px solid rgba(175, 88, 213, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), 0 0 15px rgba(175, 88, 213, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-.darkerDiv{
-  content: "";
+.darkerDiv {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 @media (max-width: 800px) {
-  .chapterDiv{
-    display: flex;
+  *{
+    --main-page-font-size: 48px;
+  }
+
+  .defaultDiv {
+    margin: 8px; /* Уменьшаем отступы на мобильных */
+    width: calc(100% - 16px);
+    background-color: rgba(175, 88, 213, 0.1);
+    border: 5px solid rgba(175, 88, 213, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.125), 0 0 15px rgba(175, 88, 213, 0.25);
+    min-height: calc(100vh - 16px);
+  }
+
+  .chapterDiv {
     flex-direction: column;
   }
 
-  .card{
-    --chapter-width: 300px;
-    --chapter-height: 400px;
+  .mainDiv {
+    background-attachment: local;
+
   }
+
+  .card{
+    --chapter-width: 350px;
+    --chapter-height: 225px;
+  }
+
 }

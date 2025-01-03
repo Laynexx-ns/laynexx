@@ -7,11 +7,14 @@ function App() {
   return (
       <div className="mainDiv">
           <div className="darkerDiv">
-              <Router>
-                  <Routes>
-                      <Route path="/" element={<MainPage/>} />
-                  </Routes>
-              </Router>
+              <div className={"defaultDiv"}>
+                  <Router>
+                      <Routes>
+                          <Route path="/" element={<MainPage/>} />
+                      </Routes>
+                  </Router>
+              </div>
+
           </div>
 
     </div>
