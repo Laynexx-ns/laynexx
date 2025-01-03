@@ -8,16 +8,14 @@ interface CardProps {
     color: string;
 }
 
-export const ChapterButton: React.FC<CardProps> = ({ children, className, onClick, color}) => {
+export const ChapterButton: React.FC<CardProps> = ({ children, className, onClick }) => {
     return (
         <button
-            className={`${className} card rounded-3xl text-[30px] transition-all duration-300 hover:text-[48px] `}
-
+            className={`card ${className} `}
             onClick={onClick}
-            style={{"--chapter-radial" : color,} as React.CSSProperties}
+            style={{cursor: "pointer"}}
         >
             {children}
         </button>
-
     );
 };

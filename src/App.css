@@ -26,8 +26,9 @@ html, body {
   font-family: 'Press Start 2P', cursive;
   background: var(--bg);
   color: var(--fg);
-  min-height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 .mainDiv {
@@ -88,7 +89,7 @@ html, body {
   }
 
   .card{
-    --chapter-width: 350px;
+    --chapter-width: 300px;
     --chapter-height: 225px;
   }
 
