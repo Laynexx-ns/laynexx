@@ -5,11 +5,17 @@ import {MainPage} from "./pages/main-page.tsx";
 function App() {
 
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<MainPage/>} />
-        </Routes>
-      </Router>
+      <div className="mainDiv">
+          <div className="darkerDiv">
+              <Router>
+                  <Routes>
+                      <Route path="/" element={<MainPage/>} />
+                  </Routes>
+              </Router>
+          </div>
+
+    </div>
+
   )
 }
 

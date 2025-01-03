@@ -9,12 +9,12 @@
   font-family: 'Press Start 2P', cursive;
   --active-color: #FFFF;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 
 }
 
 :root {
+  --chapter-radial: #363654;
   --chapter-width: 500px;
   --chapter-height: 666px;
   --space: 1rem;
@@ -25,6 +25,7 @@
   --surface-3: #52525b;
   --ease-out: cubic-bezier(0.6, 1, 0.89, 2);
   --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+  height: auto;
 }
 
 
@@ -33,6 +34,28 @@
 }
 
 
+.mainDiv {
+  position: relative;
+  background-image: url("/src/assets/Nature 4.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+
+
+.darkerDiv{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 @media (max-width: 800px) {
