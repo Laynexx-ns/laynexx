@@ -1,7 +1,7 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+
 import './App.css'
-import {MainPage} from "./pages/main-page.tsx";
-import {AboutMePage} from "./pages/about-me-page.tsx";
+import React from "react";
+import {MainPage} from "./pages/main-page";
 
 function App() {
 
@@ -9,12 +9,7 @@ function App() {
       <div className="mainDiv">
           <div className="darkerDiv">
               <div className={"defaultDiv w-full"}>
-                  <Router>
-                      <Routes>
-                          <Route path="/" element={<MainPage/>} />
-                          <Route path={"/about-me"} element={<AboutMePage/>}/>
-                      </Routes>
-                  </Router>
+                  <MainPage/>
               </div>
 
           </div>

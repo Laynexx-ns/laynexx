@@ -1,13 +1,14 @@
 import React from "react";
 import "./main-page-styles.css"
-import {SnowDiv} from "../components/snow/snow-divs.tsx";
 
 import ds from "../assets/smicons/discord.svg"
 import tg from "../assets/smicons/tg.svg"
 import gh from "../assets/smicons/gh.svg"
-import {TextFrame} from "../components/public/text-frame.tsx";
 import gif1 from "../assets/gifs/kohaku-tsukihime.gif"
 import astolfo from "../assets/gifs/astolfo.gif"
+import {TextFrame} from "../components/public/text-frame";
+import {SnowDiv} from "../components/snow/snow-divs";
+
 
 export const MainPage: React.FC = () => {
     return (

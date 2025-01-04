@@ -1,5 +1,7 @@
-import { TextFrame } from "../components/public/text-frame.tsx";
-import {SnowDiv} from "../components/snow/snow-divs.tsx";
+import React from "react";
+import {TextFrame} from "../components/public/text-frame";
+import {SnowDiv} from "../components/snow/snow-divs";
+
 
 
 export const AboutMePage = () => {
@@ -14,7 +16,7 @@ export const AboutMePage = () => {
                     >
                         <TextFrame text={'i\'m frontend&backend junior programmer from Russia. Love physic and math (but now i a little burn out). Interested in modern web-design, games.'}  title={'Who i am?'}/>
                         <TextFrame>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt={"qwe"}/>
 
                         </TextFrame>
                     </div>
