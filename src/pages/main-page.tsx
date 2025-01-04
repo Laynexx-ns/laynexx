@@ -1,27 +1,51 @@
 import React from "react";
-import {ChapterButton} from "../components/public/chapter-button.tsx";
 import "./main-page-styles.css"
 import {SnowDiv} from "../components/snow/snow-divs.tsx";
 import {Link} from "react-router-dom";
+import ds from "../assets/smicons/discord.svg"
+import tg from "../assets/smicons/tg.svg"
+import gh from "../assets/smicons/gh.svg"
+import {TextFrame} from "../components/public/text-frame.tsx";
+
 
 export const MainPage: React.FC = () => {
     return (
-        <div className='w-full h-full  '>
-
-            <div className={'w-full '}>
-                <div className='decorationDiv w-full rounded-2xl border-white'>
+        <div className={'w-full h-full'}>
+            <div className={'w-full items-center justify-center'}>
+                <div className='decorationDiv w-full  rounded-2xl border-white'>
                     <span className={"text-center"}>LAYNEXX</span>
                 </div>
             </div>
             <div className={'chapterDiv  mt-10 w-full mx-auto justify-center items-center flex flex-row gap-6'}>
-                <Link to={"/about-me"}>
-                    <ChapterButton color={"rgba(54,54,84,0.72)"}> Обо мне </ChapterButton>
-                </Link>
+                <TextFrame height={250} title={'ABOUT ME'}
+                           text={'i\'m frontend&backend junior programmer from Russia. Love physic and math (but now i a little burn out). Interested in modern web-design, games, japan culture, anime.'}/>
 
-                <ChapterButton color={"rgba(218,152,61,0.29)"}> Проекты </ChapterButton>
-                <ChapterButton color={"rgba(188,188,188,0.35)"}> text </ChapterButton>
             </div>
-            <SnowDiv />
+
+            <div className={'mt-4 w-full flex justify-center'}>
+                <TextFrame height={150} title={'STACK'}>
+                    <div className={'w-full mx-auto justify-center flex flex-row gap-6'}>
+                        <button><img src={gh} alt={'gh'}/></button>
+                        <button><img src={tg} alt={'tg'}/></button>
+                        <button><img src={ds} alt={'ds'}/></button>
+                    </div>
+                </TextFrame>
+
+            </div>
+            <div className={'mt-4 w-full flex justify-center'}>
+                <TextFrame height={150} title={'SOCIALS'}>
+                    <div className={'w-full mx-auto justify-center flex flex-row gap-6'}>
+                        <button><img src={gh} alt={'gh'}/></button>
+                        <button><img src={tg} alt={'tg'}/></button>
+                        <button><img src={ds} alt={'ds'}/></button>
+                    </div>
+                </TextFrame>
+
+            </div>
+
+
+            <SnowDiv/>
+
 
         </div>
     )

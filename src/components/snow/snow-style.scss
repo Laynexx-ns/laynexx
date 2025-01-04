@@ -2,7 +2,7 @@
 
 $d: 70;      // density
 $w: 600;     // grid size
-$s: 6s;      // speed
+$s: 6s;    // speed
 
 
 $grad: ();
@@ -21,7 +21,7 @@ $grad: ();
 // The CSS
 html {
   height: 100%;
-  background: linear-gradient(#123 30%, #ffffff);
+  background: linear-gradient(#123 20%, #ffffff);
   overflow: hidden;
 }
 .snow, .snow:before, .snow:after {

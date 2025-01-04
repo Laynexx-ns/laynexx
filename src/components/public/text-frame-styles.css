@@ -1,0 +1,25 @@
+.textFrame {
+    background-color: rgba(175, 88, 213, 0.15);
+    border: 3px solid rgba(175, 88, 213, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: all 0.3s ease;
+}
+
+.textFrame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.maintext{
+    font-family: 'ProggyClean CE Nerd Font Mono', serif;
+    font-size: 16px;
+}
+
+.frame-title {
+    position: relative;
+    text-decoration: none;
+
+    font-size: 24px;
+}

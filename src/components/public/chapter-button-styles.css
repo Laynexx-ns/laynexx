@@ -2,3 +2,34 @@
     cursor: pointer;
 }
 
+.card {
+    position: relative;
+    text-decoration: none;
+
+    font-size: 24px;
+}
+.card:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: .3s;
+}
+.card.right:after {
+    right: 0;
+}
+.card.left:after {
+    left: 0;
+}
+.card.center:after {
+    left: 50%;
+    transform: translate(-50%);
+}
+.card:hover:after {
+    width: 100%;
+}
+
+

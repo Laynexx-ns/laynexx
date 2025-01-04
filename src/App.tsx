@@ -8,7 +8,7 @@ function App() {
   return (
       <div className="mainDiv">
           <div className="darkerDiv">
-              <div className={"defaultDiv"}>
+              <div className={"defaultDiv w-full"}>
                   <Router>
                       <Routes>
                           <Route path="/" element={<MainPage/>} />
